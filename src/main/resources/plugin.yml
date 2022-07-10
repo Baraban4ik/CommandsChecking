@@ -1,0 +1,9 @@
+name: CommandsChecking
+version: '${project.version}'
+main: me.baraban4ik.commandschecking.CommandsChecking
+softdepend: [Vault, PlaceholderAPI]
+api-version: 1.16
+commands:
+  cmdcheck:
+    aliases: [cc, commandschecking]
+    usage: <command> [reload]

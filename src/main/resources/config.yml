@@ -1,0 +1,44 @@
+Commands:
+  ah:
+    # The radius is at what distance the command can be used (It's a 12 X 12 cube in this case)
+    radius: 12
+    # These coordinates are the center of the cube in which the command will work.
+    # And also the world.
+    coord:
+      x: 100
+      y: 70
+      z: -80
+      world: world
+    # These are the actions that will be performed when you are near the specified coordinates or vice versa.
+    actions: []
+    deny-actions:
+      - "(teleport)world,100,70,-80"
+      - "(msg)"
+      - "(msg)   &7You have been teleported!"
+      - "(msg)"
+  shop:
+    radius: 20
+    coord:
+      x: 88
+      y: 105
+      z: -50
+      world: Spawn
+    actions:
+      - "(take-money)100"
+    deny-actions:
+      - "(msg)&7You must be close to the spawn."
+Messages:
+  info:
+    - ""
+    - "        §6Commands Checking &8↠ &7Information"
+    - ""
+    - "     &6/cc &8— &7Shows information about commands"
+    - "        &6/cc reload &8— &7Reloads the plugin."
+    - ""
+    - "               §6Commands Checking"
+    - ""
+  reload: "&7( &6&lСmdСheck &7) &8↠ &7The plugin has been successfully reloaded!"
+  no-permission: "&7( &6&lСmdСheck &7) &8↠ &7You do not have permission!"
+  take-money: "&7( &6&lСmdСheck &7) &8↠ &7You have &6%s &7taken away you have &6%s"
+  give-money: "&7( &6&lСmdСheck &7) &8↠ &7You were given &6%s &7and now have &6%s"
+  money-error: "&7( &6&lСmdСheck &7) &8↠ &7An error occured: &6%s"
