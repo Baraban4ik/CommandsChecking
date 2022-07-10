@@ -1,9 +1,7 @@
-
 # Commands Checking
 
 With this plugin you will be able
 to create commands that will work in a certain place and only.
-
 
 ## Features of Commands Checking
 
